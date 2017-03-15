@@ -1,3 +1,5 @@
+*Updated PHP Sass Package to fix inifinite loop in PHP 7*
+
 Only for YII2 with the new Asset Manager, convert Less and Sass files to CSS whithout external tools and executable.
 The sass and less files are converted with PHP libraries
 It replace the AssetConverter who use external tools.
@@ -122,7 +124,7 @@ Also, for SCSS files you can use alternate configuration:
                         'output' => 'css', // parsed output file type
                         'options' => [ // optional options
                             'enableCompass' => true, // default is true
-                            'importPaths' => [], // import paths, you may use path alias here, 
+                            'importPaths' => [], // import paths, you may use path alias here,
                                 // e.g., `['@path/to/dir', '@path/to/dir1', ...]`
                             'lineComments' => false, // if true — compiler will place line numbers in your compiled output
                             'outputStyle' => 'nested', // May be `compressed`, `crunched`, `expanded` or `nested`,
